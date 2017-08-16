@@ -7,5 +7,4 @@ def density(To,Sppt):
     return rho_fresh + Acoef*Sppt + Bcoef*Sppt**(3/2) + 0.00048314*Sppt**2
 
 def visc(To):
-    import numpy as np
     return 2.7488e-07+1.4907e-06*np.exp(-0.034812*To)
